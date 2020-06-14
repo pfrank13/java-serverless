@@ -3,7 +3,7 @@ Build and test
 ./gradlew clean build
 ```
 
-Native image (Required more than the default 2GB of memory for me to build)
+Native image (Required more than the default 2GB of memory for Docker on macOS for me to build)
 ```shell
 ./gradlew clean shadowJar && ./docker-build.sh`
 ```
