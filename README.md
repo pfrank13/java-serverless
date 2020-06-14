@@ -5,7 +5,7 @@ Build and test
 
 Native image (Required more than the default 2GB of memory for Docker on macOS for me to build)
 ```shell
-./gradlew clean shadowJar && ./docker-build.sh`
+./gradlew clean shadowJar && ./docker-build.sh
 ```
 
 TODO:
