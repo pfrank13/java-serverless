@@ -22,6 +22,7 @@ dependencies {
     annotationProcessor("io.micronaut:micronaut-inject-java")
     annotationProcessor("io.micronaut:micronaut-validation")
     annotationProcessor("io.micronaut.data:micronaut-data-processor")
+    annotationProcessor "io.micronaut:micronaut-graal"
     implementation(enforcedPlatform("io.micronaut:micronaut-bom:$micronautVersion"))
     implementation("io.micronaut:micronaut-inject")
     implementation("io.micronaut:micronaut-validation")
@@ -30,8 +31,10 @@ dependencies {
     implementation("io.micronaut.configuration:micronaut-jdbc-hikari")
     implementation("io.micronaut.data:micronaut-data-jdbc")
     implementation("io.micronaut.aws:micronaut-function-aws-api-proxy")
+    implementation("io.micronaut.aws:micronaut-function-aws-custom-runtime")
     implementation("io.micronaut.configuration:micronaut-flyway")
     compileOnly("jakarta.persistence:jakarta.persistence-api:2.2.2")
+    compileOnly "org.graalvm.nativeimage:svm"
     runtimeOnly("ch.qos.logback:logback-classic:1.2.3")
     runtimeOnly("com.h2database:h2")
     testAnnotationProcessor(enforcedPlatform("io.micronaut:micronaut-bom:$micronautVersion"))
@@ -48,10 +51,6 @@ test.classpath += configurations.developmentOnly
 // use JUnit 5 platform
 test {
     useJUnitPlatform()
-    systemProperties = [
-        'junit.jupiter.extensions.autodetection.enabled': 'true',
-        'junit.jupiter.testinstance.lifecycle.default': 'per_class'
-    ]
 }
 
 java {
