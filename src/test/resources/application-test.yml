@@ -5,3 +5,7 @@ datasources:
     username: sa
     password: ''
     dialect: H2
+flyway:
+  datasources:
+    default:
+      locations: classpath:migrations

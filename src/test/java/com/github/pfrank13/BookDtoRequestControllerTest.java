@@ -20,7 +20,9 @@ import org.junit.jupiter.api.Test;
 import java.util.Random;
 
 import io.micronaut.function.aws.proxy.MicronautLambdaHandler;
+import io.micronaut.test.annotation.MicronautTest;
 
+@MicronautTest(environments = {"function","lambda","test"}) //Need to configure this explicitly cause it doesn't seem to suss out to add test
 public class BookDtoRequestControllerTest {
 
     private static MicronautLambdaHandler handler;
