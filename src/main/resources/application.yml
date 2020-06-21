@@ -3,7 +3,8 @@ micronaut:
     name: javaServerless
 datasources:
   default:
-    url: jdbc:mysql://lambdatest.c4qoxufww9zr.us-west-2.rds.amazonaws.com/booksdb
-    driverClassName: com.mysql.cj.jdbc.Driver
-    username: pfrank
-    password: NotAPassword
+    url: jdbc:h2:mem:devDb;MODE=MySQL;DATABASE_TO_LOWER=TRUE
+    driverClassName: org.h2.Driver
+    username: iWantThisToFail #This should not be used in the test
+    password: ''
+    dialect: H2
