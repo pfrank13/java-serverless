@@ -1,7 +1,7 @@
 FROM gradle:6.3.0-jdk11 as builder
 COPY --chown=gradle:gradle . /home/application
 WORKDIR /home/application
-RUN ./gradlew build --no-daemon
+RUN ./gradlew build --no-daemon -x test
 FROM amazonlinux:2018.03.0.20191014.0 as graalvm
 
 ENV LANG=en_US.UTF-8
