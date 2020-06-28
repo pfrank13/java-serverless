@@ -1,0 +1,3 @@
+#!/bin/sh
+set -euo pipefail
+./java-serverless -Xmx128m -Djava.library.path=$(pwd)

@@ -3,4 +3,4 @@ defaultPackage: com.github.pfrank13
 testFramework: junit
 sourceLanguage: java
 buildTool: gradle
-features: [annotation-api, app-name, aws-lambda, data, data-jdbc, docker, gradle, h2, java, java-application, jdbc-hikari, junit, logback, readme, shade, yaml]
+features: [annotation-api, app-name, aws-lambda, aws-lambda-custom-runtime, data, data-jdbc, docker, file-watch, flyway, graalvm, gradle, h2, java, jdbc-hikari, junit, logback, readme, shade, yaml]

@@ -3,11 +3,16 @@ Build and test
 ./gradlew clean build
 ```
 
-Native image (Required more than the default 2GB of memory for Docker on macOS for me to build)
+Native image (Required more than the default 2GB of memory for me to build)
 ```shell
-./gradlew clean shadowJar && ./docker-build.sh
+./docker-build.sh
+```
+
+Lambda ready zip with proper bootstrap
+```shell
+./deploy.sh
 ```
 
 TODO:
-- Try out the native image in Lambda, currently it's bundling a bunch of crap that I think I wouldn't do in a non POC world
-- Try out the native image with https://github.com/localstack/localstack, I think there is going to be a bunch of environment variables that the micronaut entrance class for AWS Lambda to start up cleanly.
+- Try out the native image with https://github.com/localstack/localstack, I think there is going to be a bunch of environment variables that the micronaut entrance class for AWS Lambda
+- Follow up with Micronaut filed issues
