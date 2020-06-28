@@ -3,7 +3,11 @@ micronaut:
     name: javaServerless
 datasources:
   default:
-    url: jdbc:mysql://lambdatest.c4qoxufww9zr.us-west-2.rds.amazonaws.com/booksdb
-    driverClassName: com.mysql.cj.jdbc.Driver
+    dialect: MYSQL #This apparently does nothing
+    jdbc-url: jdbc:mysql://lambdatest.c4qoxufww9zr.us-west-2.rds.amazonaws.com/booksdb
+    driver-class-name: com.mysql.cj.jdbc.Driver
     username: pfrank
     password: NotAPassword
+    maximum-pool-size: 1
+    minimum-idle: 1
+
