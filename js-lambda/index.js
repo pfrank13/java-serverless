@@ -7,7 +7,7 @@ exports.handler = async (event) => {
                                          host: "lambdatest.c4qoxufww9zr.us-west-2.rds.amazonaws.com",
                                          database: "booksdb",
                                          user: "pfrank",
-                                         password: "NotAPassword"
+                                         password: "Lv8adJvRMPkFCKuVANky"
                                        });
 
     con.connect(function(err) {
@@ -19,6 +19,7 @@ exports.handler = async (event) => {
       if (error)
         return reject(error);
 
+      /*
       con.query("SELECT * FROM book", function(error, results, fields){
         if(error)
           return reject(error);
@@ -30,7 +31,7 @@ exports.handler = async (event) => {
                   "statusCode": 200,
                   "body": JSON.stringify(results)
                 });
-      })
+      })*/
     });
 
   })

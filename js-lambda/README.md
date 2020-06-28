@@ -7,6 +7,9 @@ npm install
 
 To create zip for deployment into lambda
 ```shell
-npm install
-zip -r js-lambda.zip .
+./deploy.sh
+```
+Then the zip is in
+```shell
+./build/js-lambda.zip
 ```
