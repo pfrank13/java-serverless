@@ -4,10 +4,12 @@ micronaut:
 datasources:
   default:
     dialect: MYSQL #This apparently does nothing
-    jdbc-url: jdbc:mysql://lambdatest.c4qoxufww9zr.us-west-2.rds.amazonaws.com/booksdb
+    url: jdbc:mysql://lambdatest.c4qoxufww9zr.us-west-2.rds.amazonaws.com/booksdb
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: pfrank
     password: NotAPassword
-    maximum-pool-size: 1
-    minimum-idle: 1
+    initial-size: 1
+    max-active: 1
+    max-idle: 1
+    min-idle: 1
 
