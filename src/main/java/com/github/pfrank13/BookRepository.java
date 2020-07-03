@@ -7,8 +7,7 @@ import io.micronaut.data.repository.CrudRepository;
 /**
  * @author pfrank
  */
-
-@JdbcRepository(dialect = Dialect.MYSQL)
+@JdbcRepository(/*dialect = Dialect.MYSQL*/) //Uncomment the hardcoded dialect to see the test pass
 public abstract class BookRepository implements CrudRepository<Book, String> {
   public abstract BookDtoResponse findOne(final String isbn);
 }

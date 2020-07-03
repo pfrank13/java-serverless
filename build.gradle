@@ -38,11 +38,14 @@ dependencies {
     implementation("io.micronaut.aws:micronaut-function-aws-custom-runtime")
     implementation("mysql:mysql-connector-java:8.0.19")
     runtimeOnly("ch.qos.logback:logback-classic")
+    testCompile "org.testcontainers:testcontainers:1.14.3"
+    testCompile "org.testcontainers:mysql:1.14.3"
     testAnnotationProcessor(platform("io.micronaut:micronaut-bom:$micronautVersion"))
     testAnnotationProcessor("io.micronaut:micronaut-inject-java")
     testImplementation(platform("io.micronaut:micronaut-bom:$micronautVersion"))
     testImplementation("org.junit.jupiter:junit-jupiter-api")
     testImplementation("io.micronaut.test:micronaut-test-junit5")
+    testImplementation "org.testcontainers:junit-jupiter:1.14.3"
     testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine")
     testRuntimeOnly("com.h2database:h2")
 }

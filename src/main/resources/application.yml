@@ -1,13 +1,14 @@
 micronaut:
   application:
     name: javaServerless
+#This is replicated here because of issue https://github.com/micronaut-projects/micronaut-core/issues/3535
 datasources:
   default:
     dialect: MYSQL #This apparently does nothing
-    jdbc-url: jdbc:mysql://lambdatest.c4qoxufww9zr.us-west-2.rds.amazonaws.com/booksdb
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    username: pfrank
-    password: NotAPassword
+    jdbc-url: jdbc:tc:mysql://localhost/booksdb?TC_DAEMON=true
+    driver-class-name: org.testcontainers.jdbc.ContainerDatabaseDriver
+    username: test
+    password: test
     maximum-pool-size: 1
     minimum-idle: 1
 

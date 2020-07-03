@@ -11,10 +11,12 @@ import io.micronaut.http.HttpHeaders;
 import io.micronaut.http.HttpMethod;
 import io.micronaut.http.HttpStatus;
 import io.micronaut.http.MediaType;
+
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 import java.util.Random;
@@ -22,7 +24,8 @@ import java.util.Random;
 import io.micronaut.function.aws.proxy.MicronautLambdaHandler;
 import io.micronaut.test.annotation.MicronautTest;
 
-@MicronautTest(environments = {"function","lambda","test"}) //Need to configure this explicitly cause it doesn't seem to suss out to add test
+@MicronautTest(environments = {"function","lambda","test"}) //Need to configure this explicitly cause it doesn't seem to suss out to add "function","lambda"
+@Disabled
 public class BookDtoRequestControllerTest {
 
     private static MicronautLambdaHandler handler;
