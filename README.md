@@ -15,7 +15,7 @@ Lambda ready zip with proper bootstrap
 
 The zip that is created by this command in `./build/distributions/java-serverless-\*.zip` is what you want to deploy for the JVM related Lambda
 ```shell
-./gradlew clean distZip
+./gradlew clean buildZip
 ```
 
 For a JVM Lambda (with a provided runtime) the Handler class that needs to be configured is

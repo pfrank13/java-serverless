@@ -28,7 +28,7 @@ public class BookController {
         return new BookDtoResponse(persisted.getName(), book.getIsbn());
     }
 
-    @Get("/books/{isbn}")
+    @Get("/book/{isbn}")
     public BookDtoResponse find(@NotBlank @PathVariable final String isbn){
         return bookRepository.findOne(isbn);
     }

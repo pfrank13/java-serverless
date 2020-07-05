@@ -1,39 +1,52 @@
-const mysql = require("mysql")
 const { v4: uuidv4 } = require('uuid');
+const serverless = require('serverless-http');
+const express = require('express');
+const app = express();
+app.use(express.json())
+const { Sequelize, Model, DataTypes } = require('sequelize');
+const sequelize = new Sequelize("mysql://pfrank:NotAPassword@lambdatest.c4qoxufww9zr.us-west-2.rds.amazonaws.com:3306/booksdb", {
+  define: {
+    timestamps: false
+  }
+});
 
-exports.handler = async (event) => {
-  const promise = new Promise(function(resolve, reject) {
-    const con = mysql.createConnection({
-                                         host: "lambdatest.c4qoxufww9zr.us-west-2.rds.amazonaws.com",
-                                         database: "booksdb",
-                                         user: "pfrank",
-                                         password: "Lv8adJvRMPkFCKuVANky"
-                                       });
+class Book extends Model{}
 
-    con.connect(function(err) {
-      if (err) return reject(err);
-      console.log("Connected!");
-    });
+Book.init({
+  isbn: {
+    primaryKey: true,
+    type: DataTypes.STRING
+  },
+  name: {type: DataTypes.STRING}
+}, { sequelize, modelName: 'book' });
 
-    con.query(`INSERT INTO book(isbn, name) VALUES('${uuidv4()}','${event.name}')`, function (error, results, fields) {
-      if (error)
-        return reject(error);
+(async() => sequelize.sync({
 
-      /*
-      con.query("SELECT * FROM book", function(error, results, fields){
-        if(error)
-          return reject(error);
+}))()
 
-        results.forEach(result => {
-          console.log(result);
-        });
-        resolve({
-                  "statusCode": 200,
-                  "body": JSON.stringify(results)
-                });
-      })*/
-    });
+app.post('/books', async(req, res, next) => {
+  try {
+    const book = {
+      isbn: uuidv4(),
+      name: req.body.name
+    };
+    await Book.create(book);
+    res.json(book);
+  }catch(e){
+    next(e);
+  }
+})
 
-  })
-  return promise
-};
+app.get("/book/:isbn", async(req, res, next) => {
+  try {
+    res.json(await Book.findOne({
+      where: {
+        isbn: req.params.isbn
+      }
+    }));
+  }catch(e){
+    next(e);
+  }
+})
+
+module.exports.handler = serverless(app);
