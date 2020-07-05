@@ -1,0 +1,225 @@
+timestamp,message
+1593906209581,"2020-07-04T23:43:29.581Z	695b3c54-5739-4061-a868-b8be5d17d438	WARN	(sequelize) Warning: Model attributes (isbn) passed into finder method options of model book, but the options.where object is empty. Did you forget to use options.where?
+"
+1593906209582,"2020-07-04T23:43:29.582Z	695b3c54-5739-4061-a868-b8be5d17d438	INFO	Executing (default): SELECT `isbn`, `name` FROM `books` AS `book` LIMIT 1;
+"
+1593906209585,"END RequestId: 695b3c54-5739-4061-a868-b8be5d17d438
+"
+1593906209585,"REPORT RequestId: 695b3c54-5739-4061-a868-b8be5d17d438	Duration: 4.93 ms	Billed Duration: 100 ms	Memory Size: 512 MB	Max Memory Used: 108 MB	
+"
+1593906209653,"START RequestId: a410f1b1-c466-4242-890e-0f30dfe86d91 Version: $LATEST
+"
+1593906209657,"2020-07-04T23:43:29.657Z	a410f1b1-c466-4242-890e-0f30dfe86d91	INFO	req.body.name = myBookName|1593906209575
+"
+1593906209657,"2020-07-04T23:43:29.657Z	a410f1b1-c466-4242-890e-0f30dfe86d91	INFO	BODY [object Object]
+"
+1593906209657,"2020-07-04T23:43:29.657Z	a410f1b1-c466-4242-890e-0f30dfe86d91	INFO	BOOK {
+  isbn: '0d7ad747-4dd2-4bc2-8a5b-bc0921df8da6',
+  name: 'myBookName|1593906209575'
+}
+"
+1593906209658,"2020-07-04T23:43:29.658Z	a410f1b1-c466-4242-890e-0f30dfe86d91	INFO	Executing (default): INSERT INTO `books` (`isbn`,`name`) VALUES (?,?);
+"
+1593906209665,"END RequestId: a410f1b1-c466-4242-890e-0f30dfe86d91
+"
+1593906209665,"REPORT RequestId: a410f1b1-c466-4242-890e-0f30dfe86d91	Duration: 8.62 ms	Billed Duration: 100 ms	Memory Size: 512 MB	Max Memory Used: 108 MB	
+"
+1593906209736,"START RequestId: fb2d3886-b40f-49c7-b865-b8663cd9882d Version: $LATEST
+"
+1593906209738,"2020-07-04T23:43:29.738Z	fb2d3886-b40f-49c7-b865-b8663cd9882d	WARN	(sequelize) Warning: Model attributes (isbn) passed into finder method options of model book, but the options.where object is empty. Did you forget to use options.where?
+"
+1593906209739,"2020-07-04T23:43:29.739Z	fb2d3886-b40f-49c7-b865-b8663cd9882d	INFO	Executing (default): SELECT `isbn`, `name` FROM `books` AS `book` LIMIT 1;
+"
+1593906209742,"END RequestId: fb2d3886-b40f-49c7-b865-b8663cd9882d
+"
+1593906209742,"REPORT RequestId: fb2d3886-b40f-49c7-b865-b8663cd9882d	Duration: 4.62 ms	Billed Duration: 100 ms	Memory Size: 512 MB	Max Memory Used: 108 MB	
+"
+1593906209810,"START RequestId: 7ee39dfc-a66e-4312-914f-8f8c767b96da Version: $LATEST
+"
+1593906209817,"2020-07-04T23:43:29.817Z	7ee39dfc-a66e-4312-914f-8f8c767b96da	INFO	req.body.name = myBookName|1593906209733
+"
+1593906209817,"2020-07-04T23:43:29.817Z	7ee39dfc-a66e-4312-914f-8f8c767b96da	INFO	BODY [object Object]
+"
+1593906209818,"2020-07-04T23:43:29.817Z	7ee39dfc-a66e-4312-914f-8f8c767b96da	INFO	BOOK {
+  isbn: 'a4a37191-729a-4d02-a552-7e7087203eef',
+  name: 'myBookName|1593906209733'
+}
+"
+1593906209818,"2020-07-04T23:43:29.818Z	7ee39dfc-a66e-4312-914f-8f8c767b96da	INFO	Executing (default): INSERT INTO `books` (`isbn`,`name`) VALUES (?,?);
+"
+1593906209825,"END RequestId: 7ee39dfc-a66e-4312-914f-8f8c767b96da
+"
+1593906209825,"REPORT RequestId: 7ee39dfc-a66e-4312-914f-8f8c767b96da	Duration: 13.90 ms	Billed Duration: 100 ms	Memory Size: 512 MB	Max Memory Used: 108 MB	
+"
+1593906209902,"START RequestId: b7d9a834-2490-4e9d-a8cc-b008a439de50 Version: $LATEST
+"
+1593906209907,"2020-07-04T23:43:29.906Z	b7d9a834-2490-4e9d-a8cc-b008a439de50	WARN	(sequelize) Warning: Model attributes (isbn) passed into finder method options of model book, but the options.where object is empty. Did you forget to use options.where?
+"
+1593906209907,"2020-07-04T23:43:29.907Z	b7d9a834-2490-4e9d-a8cc-b008a439de50	INFO	Executing (default): SELECT `isbn`, `name` FROM `books` AS `book` LIMIT 1;
+"
+1593906209910,"END RequestId: b7d9a834-2490-4e9d-a8cc-b008a439de50
+"
+1593906209910,"REPORT RequestId: b7d9a834-2490-4e9d-a8cc-b008a439de50	Duration: 4.48 ms	Billed Duration: 100 ms	Memory Size: 512 MB	Max Memory Used: 108 MB	
+"
+1593906209982,"START RequestId: 9eda48e2-8033-4c20-a302-401d2e2205f8 Version: $LATEST
+"
+1593906209984,"2020-07-04T23:43:29.984Z	9eda48e2-8033-4c20-a302-401d2e2205f8	INFO	req.body.name = myBookName|1593906209900
+"
+1593906209984,"2020-07-04T23:43:29.984Z	9eda48e2-8033-4c20-a302-401d2e2205f8	INFO	BODY [object Object]
+"
+1593906209985,"2020-07-04T23:43:29.985Z	9eda48e2-8033-4c20-a302-401d2e2205f8	INFO	BOOK {
+  isbn: 'faa35387-48dc-4d37-83d1-df2c73f8fe07',
+  name: 'myBookName|1593906209900'
+}
+"
+1593906209985,"2020-07-04T23:43:29.985Z	9eda48e2-8033-4c20-a302-401d2e2205f8	INFO	Executing (default): INSERT INTO `books` (`isbn`,`name`) VALUES (?,?);
+"
+1593906209992,"END RequestId: 9eda48e2-8033-4c20-a302-401d2e2205f8
+"
+1593906209992,"REPORT RequestId: 9eda48e2-8033-4c20-a302-401d2e2205f8	Duration: 8.96 ms	Billed Duration: 100 ms	Memory Size: 512 MB	Max Memory Used: 108 MB	
+"
+1593906210065,"START RequestId: f8d01505-2c22-438a-a95f-4ae04d6f8978 Version: $LATEST
+"
+1593906210069,"2020-07-04T23:43:30.069Z	f8d01505-2c22-438a-a95f-4ae04d6f8978	WARN	(sequelize) Warning: Model attributes (isbn) passed into finder method options of model book, but the options.where object is empty. Did you forget to use options.where?
+"
+1593906210069,"2020-07-04T23:43:30.069Z	f8d01505-2c22-438a-a95f-4ae04d6f8978	INFO	Executing (default): SELECT `isbn`, `name` FROM `books` AS `book` LIMIT 1;
+"
+1593906210072,"END RequestId: f8d01505-2c22-438a-a95f-4ae04d6f8978
+"
+1593906210072,"REPORT RequestId: f8d01505-2c22-438a-a95f-4ae04d6f8978	Duration: 4.52 ms	Billed Duration: 100 ms	Memory Size: 512 MB	Max Memory Used: 108 MB	
+"
+1593906210141,"START RequestId: 90310507-d5e6-4f96-a6a8-c1db51bd3e04 Version: $LATEST
+"
+1593906210144,"2020-07-04T23:43:30.144Z	90310507-d5e6-4f96-a6a8-c1db51bd3e04	INFO	req.body.name = myBookName|1593906210063
+"
+1593906210144,"2020-07-04T23:43:30.144Z	90310507-d5e6-4f96-a6a8-c1db51bd3e04	INFO	BODY [object Object]
+"
+1593906210144,"2020-07-04T23:43:30.144Z	90310507-d5e6-4f96-a6a8-c1db51bd3e04	INFO	BOOK {
+  isbn: 'fc3db663-dc45-49b9-8823-15394e1ab0e0',
+  name: 'myBookName|1593906210063'
+}
+"
+1593906210145,"2020-07-04T23:43:30.145Z	90310507-d5e6-4f96-a6a8-c1db51bd3e04	INFO	Executing (default): INSERT INTO `books` (`isbn`,`name`) VALUES (?,?);
+"
+1593906210152,"END RequestId: 90310507-d5e6-4f96-a6a8-c1db51bd3e04
+"
+1593906210152,"REPORT RequestId: 90310507-d5e6-4f96-a6a8-c1db51bd3e04	Duration: 8.67 ms	Billed Duration: 100 ms	Memory Size: 512 MB	Max Memory Used: 108 MB	
+"
+1593906210292,"START RequestId: 06cb85ea-ee05-4f25-9507-56cdd46a903c Version: $LATEST
+"
+1593906210295,"2020-07-04T23:43:30.295Z	06cb85ea-ee05-4f25-9507-56cdd46a903c	WARN	(sequelize) Warning: Model attributes (isbn) passed into finder method options of model book, but the options.where object is empty. Did you forget to use options.where?
+"
+1593906210295,"2020-07-04T23:43:30.295Z	06cb85ea-ee05-4f25-9507-56cdd46a903c	INFO	Executing (default): SELECT `isbn`, `name` FROM `books` AS `book` LIMIT 1;
+"
+1593906210298,"END RequestId: 06cb85ea-ee05-4f25-9507-56cdd46a903c
+"
+1593906210298,"REPORT RequestId: 06cb85ea-ee05-4f25-9507-56cdd46a903c	Duration: 4.54 ms	Billed Duration: 100 ms	Memory Size: 512 MB	Max Memory Used: 108 MB	
+"
+1593906210371,"START RequestId: 64054ae4-5356-48a1-8e68-28e8cc17ddf2 Version: $LATEST
+"
+1593906210374,"2020-07-04T23:43:30.374Z	64054ae4-5356-48a1-8e68-28e8cc17ddf2	INFO	req.body.name = myBookName|1593906210292
+"
+1593906210374,"2020-07-04T23:43:30.374Z	64054ae4-5356-48a1-8e68-28e8cc17ddf2	INFO	BODY [object Object]
+"
+1593906210374,"2020-07-04T23:43:30.374Z	64054ae4-5356-48a1-8e68-28e8cc17ddf2	INFO	BOOK {
+  isbn: '441769ab-d942-4a6b-8df5-5ff878aad882',
+  name: 'myBookName|1593906210292'
+}
+"
+1593906210375,"2020-07-04T23:43:30.374Z	64054ae4-5356-48a1-8e68-28e8cc17ddf2	INFO	Executing (default): INSERT INTO `books` (`isbn`,`name`) VALUES (?,?);
+"
+1593906210381,"END RequestId: 64054ae4-5356-48a1-8e68-28e8cc17ddf2
+"
+1593906210382,"REPORT RequestId: 64054ae4-5356-48a1-8e68-28e8cc17ddf2	Duration: 8.73 ms	Billed Duration: 100 ms	Memory Size: 512 MB	Max Memory Used: 108 MB	
+"
+1593906210453,"START RequestId: 16e13f64-9f28-4e18-8e18-7f3691a36ec4 Version: $LATEST
+"
+1593906210456,"2020-07-04T23:43:30.456Z	16e13f64-9f28-4e18-8e18-7f3691a36ec4	WARN	(sequelize) Warning: Model attributes (isbn) passed into finder method options of model book, but the options.where object is empty. Did you forget to use options.where?
+"
+1593906210456,"2020-07-04T23:43:30.456Z	16e13f64-9f28-4e18-8e18-7f3691a36ec4	INFO	Executing (default): SELECT `isbn`, `name` FROM `books` AS `book` LIMIT 1;
+"
+1593906210459,"END RequestId: 16e13f64-9f28-4e18-8e18-7f3691a36ec4
+"
+1593906210459,"REPORT RequestId: 16e13f64-9f28-4e18-8e18-7f3691a36ec4	Duration: 4.01 ms	Billed Duration: 100 ms	Memory Size: 512 MB	Max Memory Used: 108 MB	
+"
+1593906210525,"START RequestId: d4acb392-4d50-4563-9125-7640de1ed34c Version: $LATEST
+"
+1593906210529,"2020-07-04T23:43:30.528Z	d4acb392-4d50-4563-9125-7640de1ed34c	INFO	req.body.name = myBookName|1593906210446
+"
+1593906210529,"2020-07-04T23:43:30.528Z	d4acb392-4d50-4563-9125-7640de1ed34c	INFO	BODY [object Object]
+"
+1593906210529,"2020-07-04T23:43:30.528Z	d4acb392-4d50-4563-9125-7640de1ed34c	INFO	BOOK {
+  isbn: '9ea83d1a-0b10-4df1-b9ad-4218613c0951',
+  name: 'myBookName|1593906210446'
+}
+"
+1593906210529,"2020-07-04T23:43:30.528Z	d4acb392-4d50-4563-9125-7640de1ed34c	INFO	Executing (default): INSERT INTO `books` (`isbn`,`name`) VALUES (?,?);
+"
+1593906210535,"END RequestId: d4acb392-4d50-4563-9125-7640de1ed34c
+"
+1593906210535,"REPORT RequestId: d4acb392-4d50-4563-9125-7640de1ed34c	Duration: 8.26 ms	Billed Duration: 100 ms	Memory Size: 512 MB	Max Memory Used: 108 MB	
+"
+1593906210608,"START RequestId: 79065be8-7011-4e38-8482-2fd0a894fd58 Version: $LATEST
+"
+1593906210611,"2020-07-04T23:43:30.611Z	79065be8-7011-4e38-8482-2fd0a894fd58	WARN	(sequelize) Warning: Model attributes (isbn) passed into finder method options of model book, but the options.where object is empty. Did you forget to use options.where?
+"
+1593906210611,"2020-07-04T23:43:30.611Z	79065be8-7011-4e38-8482-2fd0a894fd58	INFO	Executing (default): SELECT `isbn`, `name` FROM `books` AS `book` LIMIT 1;
+"
+1593906210614,"END RequestId: 79065be8-7011-4e38-8482-2fd0a894fd58
+"
+1593906210614,"REPORT RequestId: 79065be8-7011-4e38-8482-2fd0a894fd58	Duration: 3.96 ms	Billed Duration: 100 ms	Memory Size: 512 MB	Max Memory Used: 108 MB	
+"
+1593906210685,"START RequestId: af1a9b80-dc23-47c9-a55c-a6172e953195 Version: $LATEST
+"
+1593906210689,"2020-07-04T23:43:30.689Z	af1a9b80-dc23-47c9-a55c-a6172e953195	INFO	req.body.name = myBookName|1593906210603
+"
+1593906210689,"2020-07-04T23:43:30.689Z	af1a9b80-dc23-47c9-a55c-a6172e953195	INFO	BODY [object Object]
+"
+1593906210690,"2020-07-04T23:43:30.690Z	af1a9b80-dc23-47c9-a55c-a6172e953195	INFO	BOOK {
+  isbn: '52336f59-10df-47d9-940f-39460da8f021',
+  name: 'myBookName|1593906210603'
+}
+"
+1593906210690,"2020-07-04T23:43:30.690Z	af1a9b80-dc23-47c9-a55c-a6172e953195	INFO	Executing (default): INSERT INTO `books` (`isbn`,`name`) VALUES (?,?);
+"
+1593906210698,"END RequestId: af1a9b80-dc23-47c9-a55c-a6172e953195
+"
+1593906210698,"REPORT RequestId: af1a9b80-dc23-47c9-a55c-a6172e953195	Duration: 8.59 ms	Billed Duration: 100 ms	Memory Size: 512 MB	Max Memory Used: 108 MB	
+"
+1593906210770,"START RequestId: ccdd6419-769c-4b8e-a0fe-2a160111f2a7 Version: $LATEST
+"
+1593906210775,"2020-07-04T23:43:30.774Z	ccdd6419-769c-4b8e-a0fe-2a160111f2a7	WARN	(sequelize) Warning: Model attributes (isbn) passed into finder method options of model book, but the options.where object is empty. Did you forget to use options.where?
+"
+1593906210775,"2020-07-04T23:43:30.775Z	ccdd6419-769c-4b8e-a0fe-2a160111f2a7	INFO	Executing (default): SELECT `isbn`, `name` FROM `books` AS `book` LIMIT 1;
+"
+1593906210778,"END RequestId: ccdd6419-769c-4b8e-a0fe-2a160111f2a7
+"
+1593906210778,"REPORT RequestId: ccdd6419-769c-4b8e-a0fe-2a160111f2a7	Duration: 4.15 ms	Billed Duration: 100 ms	Memory Size: 512 MB	Max Memory Used: 108 MB	
+"
+1593906210840,"START RequestId: d62003d6-180a-4225-97b6-c949c14332b8 Version: $LATEST
+"
+1593906210843,"2020-07-04T23:43:30.843Z	d62003d6-180a-4225-97b6-c949c14332b8	INFO	req.body.name = myBookName|1593906210767
+"
+1593906210843,"2020-07-04T23:43:30.843Z	d62003d6-180a-4225-97b6-c949c14332b8	INFO	BODY [object Object]
+"
+1593906210843,"2020-07-04T23:43:30.843Z	d62003d6-180a-4225-97b6-c949c14332b8	INFO	BOOK {
+  isbn: '8944904d-d5cc-42f1-9471-814f135b2f78',
+  name: 'myBookName|1593906210767'
+}
+"
+1593906210844,"2020-07-04T23:43:30.844Z	d62003d6-180a-4225-97b6-c949c14332b8	INFO	Executing (default): INSERT INTO `books` (`isbn`,`name`) VALUES (?,?);
+"
+1593906210851,"END RequestId: d62003d6-180a-4225-97b6-c949c14332b8
+"
+1593906210851,"REPORT RequestId: d62003d6-180a-4225-97b6-c949c14332b8	Duration: 8.44 ms	Billed Duration: 100 ms	Memory Size: 512 MB	Max Memory Used: 108 MB	
+"
+1593906210917,"START RequestId: 5cb8084c-ca53-4159-8c9b-baef791cff73 Version: $LATEST
+"
+1593906210921,"2020-07-04T23:43:30.921Z	5cb8084c-ca53-4159-8c9b-baef791cff73	WARN	(sequelize) Warning: Model attributes (isbn) passed into finder method options of model book, but the options.where object is empty. Did you forget to use options.where?
+"
+1593906210922,"2020-07-04T23:43:30.922Z	5cb8084c-ca53-4159-8c9b-baef791cff73	INFO	Executing (default): SELECT `isbn`, `name` FROM `books` AS `book` LIMIT 1;
+"
+1593906210925,"END RequestId: 5cb8084c-ca53-4159-8c9b-baef791cff73
+"
+1593906210925,"REPORT RequestId: 5cb8084c-ca53-4159-8c9b-baef791cff73	Duration: 4.22 ms	Billed Duration: 100 ms	Memory Size: 512 MB	Max Memory Used: 108 MB	
+"
