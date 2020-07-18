@@ -23,6 +23,7 @@ For a JVM Lambda (with a provided runtime) the Handler class that needs to be co
 com.github.pfrank13.handler.StreamHandler
 ```
 
+Google Sheets [Workbook](https://docs.google.com/spreadsheets/d/1lm5MXfqKsvxsMV2tHe0Lq27IltkyoMSHufhZCpIBLzc/edit?usp=sharing) with rollups and data to play with
+
 TODO:
 - Try out the native image with https://github.com/localstack/localstack, I think there is going to be a bunch of environment variables that the micronaut entrance class for AWS Lambda
-- Follow up with Micronaut filed issues
