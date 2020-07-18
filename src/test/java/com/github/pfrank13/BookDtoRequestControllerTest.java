@@ -7,6 +7,9 @@ import com.amazonaws.serverless.proxy.model.AwsProxyResponse;
 import com.amazonaws.services.lambda.runtime.Context;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import io.micronaut.context.ApplicationContext;
+import io.micronaut.context.ApplicationContextBuilder;
+import io.micronaut.context.env.Environment;
 import io.micronaut.http.HttpHeaders;
 import io.micronaut.http.HttpMethod;
 import io.micronaut.http.HttpStatus;
@@ -22,7 +25,7 @@ import java.util.Random;
 import io.micronaut.function.aws.proxy.MicronautLambdaHandler;
 import io.micronaut.test.annotation.MicronautTest;
 
-@MicronautTest(environments = {"function","lambda","test"}) //Need to configure this explicitly cause it doesn't seem to suss out to add test
+//@MicronautTest(environments = {"function","lambda","test"}) //Need to configure this explicitly cause it doesn't seem to suss out to add test
 public class BookDtoRequestControllerTest {
 
     private static MicronautLambdaHandler handler;
@@ -40,7 +43,7 @@ public class BookDtoRequestControllerTest {
     @BeforeAll
     public static void setupSpec() {
         try {
-            handler = new MicronautLambdaHandler();
+            handler = new MicronautLambdaHandler(ApplicationContext.builder(Environment.TEST));
             objectMapper = handler.getApplicationContext().getBean(ObjectMapper.class);
 
         } catch (ContainerInitializationException e) {
@@ -73,7 +76,7 @@ public class BookDtoRequestControllerTest {
     @Test
     public void findBookByIsbn() throws JsonProcessingException{
         testSaveBook();
-        AwsProxyRequest request = new AwsProxyRequestBuilder("/books/" + isbn, HttpMethod.GET.toString()).build();
+        AwsProxyRequest request = new AwsProxyRequestBuilder("/book/" + isbn, HttpMethod.GET.toString()).build();
 
         AwsProxyResponse response = handler.handleRequest(request, lambdaContext);
         Assertions.assertEquals(HttpStatus.OK.getCode(), response.getStatusCode());

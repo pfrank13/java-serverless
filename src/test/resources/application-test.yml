@@ -5,6 +5,8 @@ datasources:
     username: sa
     password: ''
     dialect: H2
+    maximum-pool-size: 2 #Seems the migration connection is never put back into the pool so needs to be 2
+    minimum-idle: 1
 flyway:
   datasources:
     default:
